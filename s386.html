@@ -14,17 +14,28 @@
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
   <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
-
+  <style> 
+h1{
+    animation:blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    40%{    color: ornage; }
+    60%{    color: pink; }
+    90%{    color:transparent;  }
+    100%{   color: green;    }
+}
+</style>
+</head>
 </head>
 <body>
 
     <div class="container">
 
         <div class="page-header">
-            <h1>Frequently Asked Questions</h1>
+            <h2>Frequently Asked Questions</h2>
         </div>
-
-        <!-- Bootstrap FAQ - START -->
+		<!-- Bootstrap FAQ - START -->
         <div class="container">
          
             <div class="panel-group" id="accordion">                
@@ -140,7 +151,11 @@
                 </div>
             </div>
         </div>
-    </div>
+		<div class="container">
+			<h1 style="color='red';font-weight='bolder'"><b color="red">Popular tweets for Ganesh & Chandra</b></h1>
+			<a class="twitter-timeline" href="https://twitter.com/TwitterDev/lists/national-parks?ref_src=twsrc%5Etfw">A Twitter List by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+	</div>
 
     <style>
         .faqHeader {
